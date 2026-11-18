@@ -122,4 +122,5 @@ document.getElementById('clearTranscript').onclick=()=>{const wrap=document.getE
 function renderActivity(){const container=document.getElementById('activityList');container.textContent='';calls.forEach(c=>{const row=document.createElement('div');row.className='activity-row';const ico=document.createElement('div');ico.className='ico-wrap';ico.innerHTML=svg('phone',18);const txt=document.createElement('div');const heading=document.createElement('strong');heading.textContent='Voice demonstration with Arya';const p=document.createElement('p');p.textContent='Completed · '+Math.floor(c.seconds/60)+' min '+(c.seconds%60)+' sec';txt.append(heading,p);const time=document.createElement('time');time.textContent=c.when.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});row.append(ico,txt,time);container.append(row)});}
 })();
 </script>
+  <!-- republish -->
 </body></html>
